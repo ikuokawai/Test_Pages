@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <!-- Product name as page title -->
+    <title>%UNITY_WEB_NAME%</title>
+
+    <!-- Page Styling -->
+    <style type="text/css">
+    body
+    {
+      margin:0;
+      width: 100vw;
+      height: 100vh;
+      /*Change this to change player background color*/
+      background: #ff;
+    } 
+
+    canvas 
+    {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+
+    </style>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      UnityLoader.instantiate("unityContainer", "Build/Build.json");
+    </script>
+  </head>
+
+
+  <!-- The whole body is used as the game container and canvas within -->
+  <body id="unityContainer">
+  </body>
+
+</html>
